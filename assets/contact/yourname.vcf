@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Name;Your;
+FN:Your Name
+ORG:
+ADR;TYPE=WORK:Adress
+TITLE:Role
+TEL;TYPE=CELL:
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=WORK: Work e-mail
+URL;TYPE=Website: URL to your website
+URL;TYPE=Profile: Link to a social profile. Keys are changeable, see blow.
+URL;TYPE=GitHub:  Link to a social profile.
+KEY;TYPE=PGP;ENCODING=b:
+NOTE: Intro text
+UID:EnBizCard-100494283
+END:VCARD
