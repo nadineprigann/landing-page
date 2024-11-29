@@ -165,11 +165,13 @@ table {
   --regular: 400;
   --light: 300;
   --green: rgb(63, 223, 116);
+  --max-width: 20em;
 }
 
 @media (min-width: 30em) {
   :root {
     --fs-base: 1em;
+    --max-width: 25em;
   }
 }
 
@@ -231,15 +233,53 @@ body {
   font-weight: var(--regular);
 }
 
+.cv,
 .intro,
 .contact,
 .vcard,
+.title,
 .text {
   margin-bottom: calc(1.25em * 1.5);
 }
 
+.title {
+  font-weight: var(--bold);
+}
+
+.subtitle {
+  max-width: var(--max-width);
+  margin-bottom: calc(1.25em * 1);
+
+  &:not(:first-of-type) {
+    margin-top: calc(1.25em * 2);
+  }
+}
+
+.text,
+.list {
+  text-align: justify;
+
+  @media (min-width: 30em) {
+    max-width: var(--max-width);
+  }
+}
+
+.list {
+  /* TODO: find better / elegant way for list style indents */
+  text-align: left;
+  list-style-type: circle;
+  margin-bottom: calc(1.25em * 1);
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-left: 1em;
+
+  @media (min-width: 30em) {
+    padding-left: 1.75em;
+  }
+}
+
 .intro {
-  max-width: 18em;
+  max-width: var(--max-width);
 }
 
 .link {
