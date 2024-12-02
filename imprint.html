@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,23 +12,31 @@
   </head>
   <body>
     <header class="header">
-      <!-- format viewBox liek this: x y width height -->
-      <svg
-        class="logo"
-        xmlns="http://www.w3.org/2000/svg"
-        width="0"
-        height="0"
-        viewBox="0 0 0 0"
-      >
-        <!-- TEMPLATE: logo goes here -->
-      </svg>
+      <h1 class="logo">
+        <!-- format viewBox like this: x y width height -->
+        <svg
+          class="svg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="0"
+          height="0"
+          viewBox="0 0 0 0"
+          aria-label="company logo"
+        >
+          <!-- TEMPLATE: logo goes here -->
+        </svg>
+      </h1>
     </header>
     <div class="content">
       <h2 class="title">Impressum</h2>
-      <h3 class="subtitle">Angaben gem. § 5 TMG</h3>
-      <p>TEMPLATE_NAME</p>
-      <p>TEMPLATE_ZIP+CITY</p>
-      <a href="TEMPLATE_MAIL" class="link">TEMPLATE_MAIL</a>
+      <h3 class="subtitle" id="responsible person">Angaben gem. § 5 TMG</h3>
+      <p id="name of responsible person">TEMPLATE_NAME</p>
+      <p id="city and zip code of responsible person">TEMPLATE_ZIP+CITY</p>
+      <a
+        href="TEMPLATE_MAIL"
+        class="link"
+        aria-label="e-mail-adress of responsible person"
+        >TEMPLATE_MAIL</a
+      >
 
       <h3 class="subtitle">
         Umsatzsteuer-Identifikationsnummer gem. § 27 a Umsatzsteuergesetz
@@ -36,11 +44,15 @@
       <p>VAT no. TEMPLATE_VAT</p>
 
       <!-- please read the follwoing text carefully to make sure you're using the coreect salutation for your users and yourself. -->
-      <h3 class="subtitle">
+      <h3
+        class="subtitle"
+        id="disclaimer"
+        aria-describedby="description of disclaimer"
+      >
         Haftungsausschluss / Disclaimer<br />
         Haftung für Inhalte
       </h3>
-      <p class="text">
+      <p class="text" id="description of disclaimer">
         Alle Inhalte meines Internetauftritts wurden mit größter Sorgfalt und
         nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und
         Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als
@@ -57,8 +69,14 @@
         unverzüglich entfernen.
       </p>
 
-      <h3 class="subtitle">Haftungsbeschränkung für externe Links</h3>
-      <p class="text">
+      <h3
+        class="subtitle"
+        id="limits of warranty"
+        aria-describedby="description of warranty limits"
+      >
+        Haftungsbeschränkung für externe Links
+      </h3>
+      <p class="text" id="description of warranty limits">
         Meine Webseite enthält Links auf externe Webseiten Dritter. Auf die
         Inhalte dieser direkt oder indirekt verlinkten Webseiten habe ich keinen
         Einfluss. Daher kann ich für die „externen Links“ auch keine Gewähr auf
@@ -85,8 +103,14 @@
         unverzüglich entfernt.
       </p>
 
-      <h3 class="subtitle">Urheberrecht</h3>
-      <p class="text">
+      <h3
+        class="subtitle"
+        id="copyright"
+        aria-describedby="description of copyright"
+      >
+        Urheberrecht
+      </h3>
+      <p class="text" id="description of copyright">
         Die auf meiner Webseite veröffentlichen Inhalte und Werke unterliegen
         dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
         Verbreitung und jede Art der Verwertung des geistigen Eigentums in
@@ -103,7 +127,7 @@
       </p>
     </div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="footer navigation">
       <div class="small">
         <a href="/index.html" class="link">Back</a>
       </div>
