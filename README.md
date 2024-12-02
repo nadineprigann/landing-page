@@ -2,7 +2,7 @@
 
 This is a very simple and basic landing page I created as an interim solution until the final website is finished and deployed. Therefore, no backend, JS-framework etc. is used. The repo serves as a template to quickly create a basic page and I thought I might as well share this.
 
-If you use it, make sure to update the following parameters to personalize your project. You can use the query ```TEMPLATE```in your IDE to search for all occurences where you need to update your info. You'll also find a list here:
+If you use it, make sure to update the following parameters to personalize your project. You can use the query ```TEMPLATE``` in your IDE to search for all occurences where you need to update your info. You'll also find a list here:
 
 - **index.html.** Adjust, if necessary, your ```<meta>``` of your favicon code (colors, etc.), site title, logo, roles, intro description of what you do, contact information and fill the fields for your *.vcf*-file.
 - **Logo.** Add your logo in SVG format in all 3 .html-files at the top and update the ```viewBox``` attribute to enable resizing the SVG. Use [SVGOMG](https://jakearchibald.github.io/svgomg/) for optimization of the file.
