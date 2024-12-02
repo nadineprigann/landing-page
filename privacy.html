@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,16 +13,20 @@
   <body>
     <div class="content">
       <header class="header">
-        <!-- format viewBox liek this: x y width height -->
-        <svg
-          class="logo"
-          xmlns="http://www.w3.org/2000/svg"
-          width="0"
-          height="0"
-          viewBox="0 0 0 0"
-        >
-          <!-- TEMPLATE: logo goes here -->
-        </svg>
+        <h1 class="logo">
+          <!-- format viewBox like this: x y width height -->
+          <svg
+            class="svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="0"
+            height="0"
+            viewBox="0 0 0 0"
+            role="logo"
+            aria-label="company logo"
+          >
+            <!-- TEMPLATE: logo goes here -->
+          </svg>
+        </h1>
       </header>
       <h2 class="title">Datenschutzerklärung</h2>
       <h3 class="subtitle">Verantwortliche Ansprechperson</h3>
@@ -30,14 +34,20 @@
       <p>TEMPLATE_ZIP+CITY</p>
       <a href="TEMPLATE_MAIL" class="link">TEMPLATE_MAIL</a>
 
-      <h3 class="subtitle">Grundlegendes</h3>
-      <p class="text">
+      <h3
+        class="subtitle"
+        id="privacy-policy-introduction"
+        aria-describedby="privacy-policy-purpose privacy-policy-updates privacy-policy-definitions"
+      >
+        Grundlegendes
+      </h3>
+      <p class="text" id="privacy-policy-purpose">
         Diese Datenschutzerklärung soll die Nutzenden dieser Website über die
         Art, den Umfang und den Zweck der Erhebung und Verwendung
         personenbezogener Daten durch den Websitebetreibenden informieren.
       </p>
 
-      <p class="text">
+      <p class="text" id="privacy-policy-updates">
         Die Websitebetreibende nimmt deinen Datenschutz sehr ernst und behandelt
         deine personenbezogenen Daten vertraulich und entsprechend der
         gesetzlichen Vorschriften. Da durch neue Technologien und die ständige
@@ -46,12 +56,18 @@
         die Datenschutzerklärung in regelmäßigen Abständen wieder durchzulesen.
       </p>
 
-      <p class="text">
+      <p class="text" id="privacy-policy-definitions">
         Definitionen der verwendeten Begriffe (z.B. “personenbezogene Daten”
         oder “Verarbeitung”) findest du in Art. 4 DSGVO.
       </p>
 
-      <h3 class="subtitle">Zugriffsdaten</h3>
+      <h3
+        class="subtitle"
+        id="data-collection-reason"
+        aria-describedby="data-collection-list data-collection-details"
+      >
+        Zugriffsdaten
+      </h3>
       <p class="text">
         Ich, die Websitebetreibende bzw. Seitenprovider, erhebe aufgrund meines
         berechtigten Interesses (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über
@@ -59,7 +75,7 @@
         dem Server der Website ab. Folgende Daten werden so protokolliert:
       </p>
 
-      <ul class="list">
+      <ul class="list" id="data-collection-list">
         <li>Besuchte Website</li>
         <li>Uhrzeit zum Zeitpunkt des Zugriffes</li>
         <li>Menge der gesendeten Daten in Byte</li>
@@ -69,15 +85,19 @@
         <li>Verwendete IP-Adresse</li>
       </ul>
 
-      <p class="text">
+      <p class="text" id="data-collection-details">
         Die Server-Logfiles werden für maximal 7 Tage gespeichert und
         anschließend gelöscht. Die Speicherung der Daten erfolgt aus
         Sicherheitsgründen, um z. B. Missbrauchsfälle aufklären zu können.
         Müssen Daten aus Beweisgründen aufgehoben werden, sind sie solange von
         der Löschung ausgenommen bis der Vorfall endgültig geklärt ist. Gehostet
         wird die Website bei
-        <a href="TEMPLATE_HOSTER_LINK" class="link">TEMPLATE_HOSTER</a>, einem
-        Hosting-Anbieter, der seinen Serverstandort in
+        <a
+          href="TEMPLATE_HOSTER_LINK"
+          class="link"
+          aria-label="Link to website of hoster"
+          >TEMPLATE_HOSTER</a
+        >, einem Hosting-Anbieter, der seinen Serverstandort in
         TEMPLATE_COUNTRY_OF_HOSTER hat.
       </p>
 
@@ -126,14 +146,14 @@
         für andere Zwecke verarbeitet.
       </p>
 
-      <h3 class="subtitle">Widerspruchsrecht</h3>
-      <p class="text">
+      <h3 class="subtitle"id="objection" araia-describedby=" aria-describedby="right-of-objection objection-info">Widerspruchsrecht</h3>
+      <p class="text" id="right-of-objection" >
         Nutzende dieser Webseite können von ihrem Widerspruchsrecht Gebrauch
         machen und der Verarbeitung ihrer personenbezogenen Daten zu jeder Zeit
         widersprechen.
       </p>
 
-      <p class="text">
+      <p class="text" id="objection-info">
         Wenn du eine Berichtigung, Sperrung, Löschung oder Auskunft über die zu
         deiner Person gespeicherten personenbezogenen Daten wünschst oder Fragen
         bzgl. der Erhebung, Verarbeitung oder Verwendung deiner
@@ -142,9 +162,9 @@
         <a href="TEMPLATE_MAIL" class="link">TEMPLATE_MAIL</a>
       </p>
     </div>
-    <nav class="nav">
+    <nav class="nav" aria-label="footer navigation">
       <div class="small">
-        <a href="/index.html" class="link">Back</a>
+        <a href="/index.html" class="link">Back To Home</a>
       </div>
       <div class="small">
         <a href="/imprint.html" class="link">Imprint</a>
