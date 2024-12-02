@@ -11,26 +11,29 @@
     <title>TEMPLATE_SITE_TITLE</title>
   </head>
   <body>
-    <div class="content">
+    <main class="content">
       <header class="header">
-        <!-- format viewBox liek this: x y width height -->
-        <svg
-          class="logo"
-          xmlns="http://www.w3.org/2000/svg"
-          width="0"
-          height="0"
-          viewBox="0 0 0 0"
-        >
-          <!-- TEMPLATE: logo goes here -->
-        </svg>
+        <h1 class="logo">
+          <!-- format viewBox like this: x y width height -->
+          <svg
+            class="svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="0"
+            height="0"
+            viewBox="0 0 0 0"
+            aria-label="company logo"
+          >
+            <!-- TEMPLATE: logo goes here -->
+          </svg>
+        </h1>
       </header>
 
-      <div class="roles">
-        <h2 class="role">TEMPLATE_ROLE_1</h2>
-        <h2 class="role">TEMPLATE_ROLE_2</h2>
-      </div>
+      <section class="roles" aria-label="roles">
+        <h2 class="role" aria-label="role">TEMPLATE_ROLE_1</h2>
+        <h2 class="role" aria-label="role">TEMPLATE_ROLE_2</h2>
+      </section>
 
-      <ul class="cv">
+      <ul class="cv" aria-label="list of references">
         <li>
           <!-- reference , e. g. current workplace -->
           <a
@@ -38,6 +41,7 @@
             target="_blank"
             rel="noopener"
             class="link"
+            aria-label="reference link"
             >TEMPLATE_REFERENCE_1</a
           >
         </li>
@@ -48,6 +52,7 @@
             target="_blank"
             rel="noopener"
             class="link"
+            aria-label="reference link"
             >TEMPLATE_REFERENCE_2,
           </a>
         </li>
@@ -58,6 +63,7 @@
             target="_blank"
             rel="noopener"
             class="link"
+            aria-label="reference link"
             >TEMPLATE_REFERENCE_3,
           </a>
         </li>
@@ -65,28 +71,38 @@
       <!-- Your short description text goes here. -->
       <p class="intro">TEMPLATE_DESCRIPTION</p>
 
-      <div class="contact">
-        <p>TEMPLATE_ZIP+CITY</p>
-        <ul>
-          <li>
-            <a href="TEMPLATE_MAIL" class="link">TEMPLATE_MAIL</a>
+      <section class="contact" aria-labelledby="contact">
+        <p id="contact">TEMPLATE_ZIP+CITY</p>
+        <ul aria-label="contact list">
+          <li aria-label="contact element">
+            <a href="TEMPLATE_MAIL" aria-label="contact link" class="link"
+              >TEMPLATE_MAIL</a
+            >
           </li>
-          <li>
-            <a href="TEMPLATE_SOCIAL_PROFILE_LINK" class="link"
+          <li aria-label="contact element">
+            <a
+              href="TEMPLATE_SOCIAL_PROFILE_LINK"
+              aria-label="contact link"
+              class="link"
               >TEMPLATE_SOCIAL_PROFILE</a
             >
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="vcard">
-        <a href="assets/contact/TEMPLATE_VCF.vcf" download class="button">
+      <section class="vcard" aria-label="contact file">
+        <a
+          href="assets/contact/TEMPLATE_VCF.vcf"
+          download
+          class="button"
+          aria-label="download contact file"
+        >
           Add contact
         </a>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="footer navigation">
       <div class="small">
         <a href="/imprint.html" class="link">Imprint</a>
       </div>
