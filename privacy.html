@@ -21,7 +21,6 @@
             width="0"
             height="0"
             viewBox="0 0 0 0"
-            role="logo"
             aria-label="company logo"
           >
             <!-- TEMPLATE: logo goes here -->
@@ -29,10 +28,17 @@
         </h1>
       </header>
       <h2 class="title">Datenschutzerklärung</h2>
-      <h3 class="subtitle">Verantwortliche Ansprechperson</h3>
-      <p>TEMPLATE_NAME</p>
-      <p>TEMPLATE_ZIP+CITY</p>
-      <a href="TEMPLATE_MAIL" class="link">TEMPLATE_MAIL</a>
+      <h3 class="subtitle" id="responsible person">
+        Verantwortliche Ansprechperson
+      </h3>
+      <p id="name of responsible person">TEMPLATE_NAME</p>
+      <p id="city and zip code of responsible person">TEMPLATE_ZIP+CITY</p>
+      <a
+        href="TEMPLATE_MAIL"
+        class="link"
+        aria-label="e-mail-adress of responsible person"
+        >TEMPLATE_MAIL</a
+      >
 
       <h3
         class="subtitle"
@@ -146,8 +152,14 @@
         für andere Zwecke verarbeitet.
       </p>
 
-      <h3 class="subtitle"id="objection" araia-describedby=" aria-describedby="right-of-objection objection-info">Widerspruchsrecht</h3>
-      <p class="text" id="right-of-objection" >
+      <h3
+        class="subtitle"
+        id="objection"
+        aria-describedby="right-of-objection objection-info"
+      >
+        Widerspruchsrecht
+      </h3>
+      <p class="text" id="right-of-objection">
         Nutzende dieser Webseite können von ihrem Widerspruchsrecht Gebrauch
         machen und der Verarbeitung ihrer personenbezogenen Daten zu jeder Zeit
         widersprechen.
