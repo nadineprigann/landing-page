@@ -164,7 +164,7 @@ table {
   --bold: 700;
   --regular: 400;
   --light: 300;
-  --green: rgb(63, 223, 116);
+  --highlight: rgb(63, 223, 116);
   --max-width: 20em;
 }
 
@@ -294,10 +294,10 @@ body {
 }
 
 .link:focus-visible {
-  color: var(--green);
+  color: var(--highlight);
   outline: none;
   box-shadow: none;
-  outline: 1px solid var(--green);
+  outline: 1px solid var(--highlight);
   outline-offset: 0.1em;
   border-radius: 0.2em;
 }
@@ -309,20 +309,20 @@ body {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  border: dotted var(--green) 1px;
+  border: dotted var(--highlight) 1px;
   padding: 0.5em;
   border-radius: 0.5em;
 }
 
 .button:hover {
-  border: solid 1px var(--green);
+  border: solid 1px var(--highlight);
 }
 
 .button:focus-visible {
-  color: var(--green);
+  color: var(--highlight);
   outline: none;
   box-shadow: none;
-  outline: 1px solid var(--green);
+  outline: 1px solid var(--highlight);
 }
 
 .nav {
