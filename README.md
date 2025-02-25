@@ -10,16 +10,16 @@ In order to be able to fetch update commits from this template, do not generate 
 2. Run the following commands to duplicate the *landing-page* repository:
 
 ```
-git clone --bare <git@github.com>:nadineprigann/landing-page.git
+git clone --bare git@github.com:nadineprigann/landing-page.git
 cd landing-page.git
-git push --mirror <git@github.com>:youraccount/project.git
+git push --mirror git@github.com:youraccount/project.git
 cd ..
 rm -rf landing-page.git
 ```
 
 3. Clone your new repository and add *landing-page* as a remote:
 
-```git remote add default <git@github.com>:nadineprigann/landing-page.git```
+```git remote add default git@github.com:nadineprigann/landing-page.git```
 
 4. Create a dev branch (if not already existing) and publish it to the remote repository.
 
