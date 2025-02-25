@@ -2,7 +2,46 @@
 
 This is a very simple and basic landing page I created as an interim solution until the final website is finished and deployed. Therefore, no backend, JS-framework etc. is used. The repo serves as a template to quickly create a basic page and I thought I might as well share this.
 
-If you use it, make sure to update the following parameters to personalize your project. You can use the query ```TEMPLATE``` in your IDE to search for all occurences where you need to update your info. You'll also find a list here:
+##  Preparation
+
+In order to be able to fetch update commits from this template, do not generate a new project from it but rather clone this template and add it as a remote to your project. Here's how to do it:
+
+1. Initialize a (private) repository on GitHub.
+2. Run the following commands to duplicate the *landing-page* repository:
+
+```
+git clone --bare <git@github.com>:nadineprigann/landing-page.git
+cd landing-page.git
+git push --mirror <git@github.com>:youraccount/project.git
+cd ..
+rm -rf landing-page.git
+```
+
+3. Clone your new repository and add *landing-page* as a remote:
+
+```git remote add default <git@github.com>:nadineprigann/landing-page.git```
+
+4. Create a dev branch (if not already existing) and publish it to the remote repository.
+
+5. Protect the master branch (see GitHub repository settings).
+
+##  Update repository
+
+Whenever there are new commits made to the *landing-page* that should be applied to one of its instances, simply fetch them:
+
+```git fetch default master```
+
+List the new commits:
+
+```git log --oneline master..default/master```
+
+Pick commits with <a href="https://git-scm.com/docs/git-cherry-pick" target="blank" rel="noopener">git-cherry-pick</a>:
+
+```git cherry-pick -x <commit>```
+
+## Usage
+
+Make sure to update the following parameters to personalize your project. You can use the query ```TEMPLATE``` in your IDE to search for all occurences where you need to update your info. You'll also find a list here:
 
 - **index.html.** Adjust, if necessary, your ```<meta>``` of your favicon code (colors, etc.), site title, logo, roles, intro description of what you do, contact information and fill the fields for your *.vcf*-file.
 - **Logo.** Add your logo in SVG format in all 3 .html-files at the top and update the ```viewBox``` attribute to enable resizing the SVG. Use [SVGOMG](https://jakearchibald.github.io/svgomg/) for optimization of the file.
