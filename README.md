@@ -45,9 +45,9 @@ Make sure to update the following parameters to personalize your project. You ca
 
 - **Favicon.** Create one and optimize your favicon via [Real Favicon Generator](https://realfavicongenerator.net/) and extract the contents of the folder into the */favicon* folder.
 - **Logo.** Add your logo in SVG format in all 3 *.html* files at the top and update the ```viewBox``` attribute to enable resizing of the SVG. Use [SVGOMG](https://jakearchibald.github.io/svgomg/) for optimization of the file. Review the copyright information within the SVG code to account for proper copyright declaration.
-- **index.html.** Adjust, if necessary, your ```<meta>``` of your favicon code (colors, etc.), site title, logo, roles, intro description of what you do, contact information and fill the fields for your *.vcf*-file.
-- **Privacy + Imprint.** Update responsible person, their address, your VAT number, your hoster and the desired form of salutation throughout the text within the docs privacy and imprint. *Please note: currently, these docs are only available in German since it's legally mandatory to have these. If there is demand to translate it to English, I will do so.*
+- **index.html.** Adjust, if necessary, your ```<meta>``` of your favicon code (colors, etc.), site title, logo, roles, intro description of what you do and contact information.
 - **.VCF file.** Update the desired lines with your information to create a downloadable file that serves as a low key business card. When downloaded, it will be saved to the phone contacts by default.
-- **CSS.** Search for the location where the CSS variable ```--highlight```is defined and change the RGB value to your desired highlight color. This is used for the border of the *.vcf* file and the focus style.
+- **Privacy + Imprint.** Update responsible person, their address, your VAT number, your hoster and the desired form of salutation throughout the text within the docs privacy and imprint. *Please note: currently, these docs are only available in German since it's legally mandatory to have these. If there is demand to translate it to English, I will do so.*
+- **CSS.** Search for the location where the CSS variable ```--highlight``` is defined and change the RGB value to your desired highlight color. This is used for the border of the *.vcf* file and the focus style.
 
 If you have any suggestions or changes, please contribute, esp. regarding a11y-updates / -refactors. Happy basic templating!
