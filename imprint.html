@@ -52,8 +52,10 @@
         class="link"
         aria-label="e-mail-adress of responsible person"
       >
-        <!-- note: to avoid bots using the adress, fill in the adress in reverse order. it is displayed correctly via css. consider obfuscation (ät, ...)  -->
-        <span class="mail">TEMPLATE_MAIL</span>
+        <!-- note: to avoid bots using the adress, consider obfuscation (ät, ...).
+        format like so: hallo<span>...</span>@domain.com -->
+        TEMPLATE_MAIL_IDENTIFIER<span class="spamblock">spamblock</span
+        >TEMPLATE_MAIL_DOMAIN
       </a>
 
       <h3 class="subtitle">

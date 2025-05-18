@@ -131,8 +131,10 @@
               aria-label="contact link"
               class="link"
             >
-              <!-- note: to avoid bots using the adress, fill in the adress in reverse order. it is displayed correctly via css. consider obfuscation (ät, ...)  -->
-              <span class="mail">TEMPLATE_MAIL</span>
+              <!-- note: to avoid bots using the adress, consider obfuscation (ät, ...).
+              format like so: hallo<span>...</span>@domain.com -->
+              TEMPLATE_MAIL_IDENTIFIER<span class="spamblock">spamblock</span
+              >TEMPLATE_MAIL_DOMAIN
             </a>
           </li>
           <li aria-label="contact element">
