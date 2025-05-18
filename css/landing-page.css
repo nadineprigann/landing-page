@@ -340,3 +340,8 @@ body {
 .small {
   font-size: var(--fs-small);
 }
+
+.mail {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
