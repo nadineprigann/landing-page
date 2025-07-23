@@ -164,7 +164,8 @@ table {
   --bold: 700;
   --regular: 400;
   --light: 300;
-  --highlight: rgb(63, 223, 116);
+  --highlight: rgb(21, 184, 110);
+  --text-shadow: 0.15em 0.15em 1em var(--highlight);
   --max-width: 20em;
 }
 
@@ -286,21 +287,17 @@ body {
 .link {
   display: inline-block;
   color: black;
-  text-decoration: underline dotted grey;
-  -webkit-text-decoration: underline dotted grey;
+  text-decoration: underline dotted var(--highlight);
+  -webkit-text-decoration: underline dotted var(--highlight);
 }
 
 .link:hover {
-  text-decoration: underline black;
+  text-decoration: underline var(--highlight);
 }
 
 .link:focus-visible {
-  color: var(--highlight);
-  outline: none;
-  box-shadow: none;
-  outline: 1px solid var(--highlight);
-  outline-offset: 0.1em;
-  border-radius: 0.2em;
+  outline: 0;
+  text-shadow: var(--text-shadow);
 }
 
 .button {
