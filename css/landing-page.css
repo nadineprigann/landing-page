@@ -164,7 +164,7 @@ table {
   --bold: 700;
   --regular: 400;
   --light: 300;
-  --highlight: rgb(21, 184, 110);
+  --highlight: rgb(2, 92, 23);
   --text-shadow: 0.15em 0.15em 1em var(--highlight);
   --max-width: 20em;
 }
