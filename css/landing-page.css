@@ -197,6 +197,12 @@ body {
   justify-content: space-between;
 }
 
+/* increase touch target size for a11y via negative margins */
+a {
+  padding: 0.7em 0.5em;
+  margin: -0.7em -0.5em;
+}
+
 .content {
   display: flex;
   flex-direction: column;
